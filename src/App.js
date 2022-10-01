@@ -5,12 +5,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // components
 import Header from './components/header';
+import Footer from './components/footer';
 
 function App() {
     return (
         <Router>
             <div className="App">
-                <CssBaseline />
                 <Header />
 
                 <main>
@@ -23,7 +23,7 @@ function App() {
                     </Routes>
                 </main>
 
-                {/* Footer will go here */}
+                <Footer />
             </div>
         </Router>
         );

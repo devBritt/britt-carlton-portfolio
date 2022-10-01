@@ -9,6 +9,8 @@ const Header = () => {
             spacing={2}
             justifyContent={'space-between'}
             alignItems={'center'}
+            id={'app-header'}
+            aria-label={'header'}
         >
             <Grid item xs={2}>
                 <Typography
@@ -32,6 +34,8 @@ const Header = () => {
                 container
                 item
                 xs={'auto'}
+                id={'nav'}
+                aria-label={'navigation'}
             >
                 <Grid item xs={'auto'}>
                     <Typography
