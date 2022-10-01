@@ -3,12 +3,15 @@ import './assets/css/App.css';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+// components
+import Header from './components/header';
+
 function App() {
     return (
         <Router>
             <div className="App">
                 <CssBaseline />
-                {/* Header will go here */}
+                <Header />
 
                 <main>
                     <Routes>
