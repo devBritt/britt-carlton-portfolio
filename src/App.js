@@ -9,6 +9,8 @@ import Footer from './components/footer';
 
 // pages
 import About from './pages/home-about';
+import Work from './pages/work';
+import Contact from './pages/contact';
 
 function App() {
     return (
@@ -21,8 +23,8 @@ function App() {
                     <Routes>
                         {/* TODO: add corresponding page to Route element */}
                         <Route path='/' element={<About />} />
-                        <Route path='/work' element={<></>} />
-                        <Route path='/contact' element={<></>} />
+                        <Route path='/work' element={<Work />} />
+                        <Route path='/contact' element={<Contact />} />
                         <Route path='/resume' element={<></>} />
                     </Routes>
                 </main>
