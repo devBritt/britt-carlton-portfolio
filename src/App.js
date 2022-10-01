@@ -1,5 +1,5 @@
-import { CssBaseline } from '@mui/material';
 import './assets/css/App.css';
+import { CssBaseline, Box } from '@mui/material';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -7,16 +7,20 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
 
+// pages
+import About from './pages/home-about';
+
 function App() {
     return (
-        <Router>
-            <div className="App">
+        <Box className="App" padding={2}>
+            <Router>
+                <CssBaseline />
                 <Header />
 
                 <main>
                     <Routes>
                         {/* TODO: add corresponding page to Route element */}
-                        <Route path='/' element={<></>} />
+                        <Route path='/' element={<About />} />
                         <Route path='/work' element={<></>} />
                         <Route path='/contact' element={<></>} />
                         <Route path='/resume' element={<></>} />
@@ -24,8 +28,8 @@ function App() {
                 </main>
 
                 <Footer />
-            </div>
-        </Router>
+            </Router>
+        </Box>
         );
     }
     
