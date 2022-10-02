@@ -11,6 +11,7 @@ import Footer from './components/footer';
 import About from './pages/home-about';
 import Work from './pages/work';
 import Contact from './pages/contact';
+import Resume from './pages/resume';
 
 function App() {
     return (
@@ -25,7 +26,7 @@ function App() {
                         <Route path='/' element={<About />} />
                         <Route path='/work' element={<Work />} />
                         <Route path='/contact' element={<Contact />} />
-                        <Route path='/resume' element={<></>} />
+                        <Route path='/resume' element={<Resume />} />
                     </Routes>
                 </main>
 

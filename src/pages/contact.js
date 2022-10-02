@@ -15,6 +15,8 @@ const Contact = () => {
                 item
                 id={'contact-info'}
                 aria-label={"Brittany's contact information"}
+                xs={12}
+                md={6}
             >
                 <Typography
                     component={'h2'}
@@ -30,7 +32,12 @@ const Contact = () => {
                 {/* TODO: Slack */}
             </Grid>
 
-            <Grid item>
+            <Grid
+                item
+                id={'form-container'}
+                xs={12}
+                md={6}
+            >
                 <Typography
                     component={'h2'}
                     variant={'h2'}
