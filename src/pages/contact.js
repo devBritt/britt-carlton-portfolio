@@ -1,4 +1,5 @@
-import { FormControl, Grid, InputLabel, Paper, TextField, Typography } from "@mui/material";
+import { Button, FormControl, Grid, InputLabel, TextField, Typography } from "@mui/material";
+import SendIcon from "@mui/icons-material/Send";
 
 const Contact = () => {
     return (
@@ -23,10 +24,10 @@ const Contact = () => {
                 </Typography>
                 
                 {/* TODO: add contact icons and corresponding details */}
-                {/* TODO: GitHub */}
-                {/* TODO: Slack */}
                 {/* TODO: Email */}
                 {/* TODO: Phone */}
+                {/* TODO: GitHub */}
+                {/* TODO: Slack */}
             </Grid>
 
             <Grid item>
@@ -47,8 +48,10 @@ const Contact = () => {
                             item
                             xs={12}
                             m={6}
+                            mx={0}
+                            mb={0}
                         >
-                            <FormControl>
+                            <FormControl fullWidth>
                                 <InputLabel htmlFor={'name-input'}>Full Name</InputLabel>
                                 <TextField
                                     id="name-input"
@@ -62,8 +65,9 @@ const Contact = () => {
                             item
                             xs={12}
                             m={6}
+                            mx={0}
                         >
-                            <FormControl>
+                            <FormControl fullWidth>
                                 <InputLabel htmlFor={'email-input'}>Email Address</InputLabel>
                                 <TextField
                                     id="email-input"
@@ -74,7 +78,7 @@ const Contact = () => {
                             </FormControl>
                         </Grid>
                         <Grid item xs={12}>
-                            <FormControl>
+                            <FormControl fullWidth>
                                 <InputLabel htmlFor={'msg-input'}>Go ahead, leave a message!</InputLabel>
                                 <TextField
                                     id="msg-input"
@@ -87,6 +91,9 @@ const Contact = () => {
                                 />
                             </FormControl>
                         </Grid>
+                    </Grid>
+                    <Grid container item xs={12} m={6} justifyContent={'flex-start'}>
+                        <Button variant='contained' endIcon={<SendIcon /> }>Send </Button>
                     </Grid>
                 </form>
             </Grid>
