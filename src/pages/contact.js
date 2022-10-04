@@ -1,9 +1,20 @@
 import { Button, FormControl, Grid, InputLabel, TextField, Typography, Stack, Link } from "@mui/material";
-import SendIcon from "@mui/icons-material/Send";
+import SendIcon from "@mui/icons-material/SendRounded";
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import DialpadRoundedIcon from '@mui/icons-material/DialpadRounded';
 
+import { useState } from 'react';
+
 const Contact = () => {
+    // state for name-input
+    const [nameInput, setNameInput] = useState('');
+
+    // state for email-input
+    const [emailInput, setEmailInput] = useState('');
+
+    // state for msg-input
+    const [msgInput, setMsgInput] = useState('');
+
     return (
         <Grid
             container
@@ -13,7 +24,6 @@ const Contact = () => {
         >
             {/* Contact info column */}
             <Grid
-                container
                 item
                 id={'contact-info'}
                 aria-label={"Brittany's contact information"}
@@ -22,7 +32,7 @@ const Contact = () => {
             >
                 <Typography
                     component={'h2'}
-                    variant={'h2'}
+                    variant={'h3'}
                 >
                     Contact me at:
                 </Typography>
@@ -55,7 +65,7 @@ const Contact = () => {
             >
                 <Typography
                     component={'h2'}
-                    variant={'h2'}
+                    variant={'h3'}
                 >
                     Shoot me a message:
                 </Typography>
@@ -79,7 +89,9 @@ const Contact = () => {
                                     id="name-input"
                                     variant="filled"
                                     required
-                                    // TODO: add value, onChange
+                                    onChange={(e) => {
+                                        setNameInput(e.target.value);
+                                    }}
                                 />
                             </FormControl>
                         </Grid>
@@ -95,7 +107,9 @@ const Contact = () => {
                                     id="email-input"
                                     variant="filled"
                                     required
-                                    // TODO: add value, onChange
+                                    onChange={(e) => {
+                                        setEmailInput(e.target.value);
+                                    }}
                                 />
                             </FormControl>
                         </Grid>
@@ -109,7 +123,9 @@ const Contact = () => {
                                     minRows={5}
                                     maxRows={10}
                                     required
-                                    // TODO: add value, onChange
+                                    onChange={(e) => {
+                                        setMsgInput(e.target.value);
+                                    }}
                                 />
                             </FormControl>
                         </Grid>
