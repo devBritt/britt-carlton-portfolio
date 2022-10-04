@@ -1,5 +1,7 @@
-import { Button, FormControl, Grid, InputLabel, TextField, Typography } from "@mui/material";
+import { Button, FormControl, Grid, InputLabel, TextField, Typography, Stack, Link } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
+import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
+import DialpadRoundedIcon from '@mui/icons-material/DialpadRounded';
 
 const Contact = () => {
     return (
@@ -8,10 +10,10 @@ const Contact = () => {
             id={'contact'}
             aria-label={'contact page content'}
             spacing={3}
-            justifyContent={'space-around'}
-            alignItems={'center'}
         >
+            {/* Contact info column */}
             <Grid
+                container
                 item
                 id={'contact-info'}
                 aria-label={"Brittany's contact information"}
@@ -25,13 +27,26 @@ const Contact = () => {
                     Contact me at:
                 </Typography>
                 
-                {/* TODO: add contact icons and corresponding details */}
-                {/* TODO: Email */}
-                {/* TODO: Phone */}
-                {/* TODO: GitHub */}
-                {/* TODO: Slack */}
+                <Stack spacing={3}>
+                    <Stack direction={'row'} spacing={2}>
+                        <EmailRoundedIcon></EmailRoundedIcon>
+                        <Link href={'mailto:brittanyrc95@gmail.com'} underline={'none'}>brittanyrc95@gmail.com</Link>
+                    </Stack>
+                    <Stack direction={'row'} spacing={2}>
+                        <DialpadRoundedIcon></DialpadRoundedIcon>
+                        <Link href={'tel:+14405201590'} underline={'none'}>440.520.1590</Link>
+                    </Stack>
+                    <Stack direction={'row'} spacing={2}>
+                        <img height="32" width="32" src="https://unpkg.com/simple-icons@v7/icons/github.svg" />
+                        <Link href={'https://github.com/devBritt'} underline={'none'}>/devBritt</Link>
+                    </Stack>
+                    <Stack direction={'row'} spacing={2}>
+                        <img height="32" width="32" src="https://unpkg.com/simple-icons@v7/icons/linkedin.svg" />
+                        <Link href={'https://www.linkedin.com/in/brittany-carlton/'} underline={'none'}>/brittany-carlton</Link>
+                    </Stack>
+                </Stack>
             </Grid>
-
+            {/* Contact form column */}
             <Grid
                 item
                 id={'form-container'}

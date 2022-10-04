@@ -23,7 +23,6 @@ function App() {
                 <Container >
                     <main>
                         <Routes>
-                            {/* TODO: add corresponding page to Route element */}
                             <Route path='/' element={<About />} />
                             <Route path='/work' element={<Work />} />
                             <Route path='/contact' element={<Contact />} />
