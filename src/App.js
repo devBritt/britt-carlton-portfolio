@@ -1,5 +1,5 @@
 import './assets/css/App.css';
-import { CssBaseline, Box } from '@mui/material';
+import { CssBaseline, Container, Box } from '@mui/material';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -20,15 +20,17 @@ function App() {
                 <CssBaseline />
                 <Header />
 
-                <main>
-                    <Routes>
-                        {/* TODO: add corresponding page to Route element */}
-                        <Route path='/' element={<About />} />
-                        <Route path='/work' element={<Work />} />
-                        <Route path='/contact' element={<Contact />} />
-                        <Route path='/resume' element={<Resume />} />
-                    </Routes>
-                </main>
+                <Container >
+                    <main>
+                        <Routes>
+                            {/* TODO: add corresponding page to Route element */}
+                            <Route path='/' element={<About />} />
+                            <Route path='/work' element={<Work />} />
+                            <Route path='/contact' element={<Contact />} />
+                            <Route path='/resume' element={<Resume />} />
+                        </Routes>
+                    </main>
+                </Container>
 
                 <Footer />
             </Router>

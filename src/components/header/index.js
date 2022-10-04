@@ -1,5 +1,4 @@
-import { useState } from 'react-dom';
-import { Container, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const Header = () => {

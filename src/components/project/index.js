@@ -1,7 +1,7 @@
-const Project = () => {
+const Project = (project) => {
     return (
         <article className="project">
-
+            
         </article>
     );
 }
