@@ -11,7 +11,7 @@ const Header = () => {
             id={'app-header'}
             aria-label={'header'}
         >
-            <Grid item xs={2}>
+            <Grid item xs>
                 <Typography
                     variant={"h6"}
                     noWrap
