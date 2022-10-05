@@ -1,9 +1,28 @@
-import { Button, FormControl, Grid, InputLabel, TextField, Typography, Stack, Link } from "@mui/material";
+import { Button, FormControl, Grid, FormHelperText, TextField, Typography, Stack, Link } from "@mui/material";
+import { styled } from '@mui/material/styles';
 import SendIcon from "@mui/icons-material/SendRounded";
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import DialpadRoundedIcon from '@mui/icons-material/DialpadRounded';
 
 import { useState } from 'react';
+
+const CustomTextField = styled((props) => (
+    <TextField InputProps={{ disableUnderline: true }} {...props} />
+  ))(() => ({
+    '& .MuiFilledInput-root': {
+      borderBottom: '1px solid #ebedef',
+      overflow: 'hidden',
+      borderTopLeftRadius: 4,
+      borderTopRightRadius: 4,
+      background: 'rgba(235, 237, 239, 0.1)'
+    },
+    '& .MuiInputBase-input': {
+        paddingLeft: 10,
+        paddingRight: 10,
+        paddingTop: 8,
+        paddingBottom: 8
+    }
+  }));
 
 const Contact = () => {
     // state for name-input
@@ -33,6 +52,7 @@ const Contact = () => {
                 <Typography
                     component={'h2'}
                     variant={'h3'}
+                    gutterBottom
                 >
                     Contact me at:
                 </Typography>
@@ -66,6 +86,7 @@ const Contact = () => {
                 <Typography
                     component={'h2'}
                     variant={'h3'}
+                    gutterBottom
                 >
                     Shoot me a message:
                 </Typography>
@@ -73,64 +94,67 @@ const Contact = () => {
                 <form id={'contact-form'} aria-label={'the form to send Brittany a message'}>
                     <Grid
                         container
-                        spacing={0}
+                        spacing={3}
                         alignItems={'center'}
                     >
                         <Grid
                             item
                             xs={12}
-                            m={6}
+                            md={6}
                             mx={0}
                             mb={0}
                         >
                             <FormControl fullWidth>
-                                <InputLabel htmlFor={'name-input'}>Full Name</InputLabel>
-                                <TextField
+                                <CustomTextField
                                     id="name-input"
                                     variant="filled"
+                                    placeholder="Jane Doe"
                                     required
                                     onChange={(e) => {
                                         setNameInput(e.target.value);
                                     }}
                                 />
+                                <FormHelperText>First and Last Name</FormHelperText>
                             </FormControl>
                         </Grid>
                         <Grid
                             item
                             xs={12}
-                            m={6}
+                            md={6}
                             mx={0}
                         >
                             <FormControl fullWidth>
-                                <InputLabel htmlFor={'email-input'}>Email Address</InputLabel>
-                                <TextField
+                                <CustomTextField
                                     id="email-input"
                                     variant="filled"
+                                    placeholder="myname@email.com"
                                     required
                                     onChange={(e) => {
                                         setEmailInput(e.target.value);
                                     }}
                                 />
+                                <FormHelperText>Email Address</FormHelperText>
                             </FormControl>
                         </Grid>
                         <Grid item xs={12}>
                             <FormControl fullWidth>
-                                <InputLabel htmlFor={'msg-input'}>Go ahead, leave a message!</InputLabel>
-                                <TextField
+                                <CustomTextField
                                     id="msg-input"
                                     variant="filled"
+                                    placeholder="This form is currently in development. If you'd like to get in touch, please use one of the options on the left. Thanks!"
                                     multiline
                                     minRows={5}
-                                    maxRows={10}
+                                    maxRows={8}
                                     required
                                     onChange={(e) => {
                                         setMsgInput(e.target.value);
                                     }}
                                 />
+                                <FormHelperText>Your Message to Brittany</FormHelperText>
                             </FormControl>
                         </Grid>
                     </Grid>
-                    <Grid container item xs={12} m={6} justifyContent={'flex-start'}>
+                    <Grid container item xs={12} md={6} justifyContent={'flex-start'}>
                         <Button variant='contained' endIcon={<SendIcon /> }>Send </Button>
                     </Grid>
                 </form>

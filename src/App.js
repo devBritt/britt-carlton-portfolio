@@ -20,7 +20,7 @@ const theme = createTheme({
     palette: {
         mode: 'dark',
         common: {
-            black: '#1c2535',
+            black: '#151c28',
             white: '#f7f7f8'
         },
         primary: {
@@ -68,6 +68,16 @@ const theme = createTheme({
             A200: '#dfe3e7',
             A400: '#8a99a8',
             A700: '#404c59'
+        },
+        text: {
+            primary: '#f7f7f8',
+            secondary: 'rgba(247, 247, 248, 0.7',
+            disabled: 'rgba(247, 247, 248, 0.7',
+            icon: 'rgba(247, 247, 248, 0.5'
+        },
+        background: {
+            paper: '#151c28',
+            default: '#151c28'
         }
     },
     typography: {
