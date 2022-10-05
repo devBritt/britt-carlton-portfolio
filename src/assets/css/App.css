@@ -1,0 +1,41 @@
+/* color variables */
+
+
+/* custom fonts */
+@font-face {
+    font-family: 'Mersad';
+    src: url('../fonts/mersad/Mersad-ExtraBold.woff2') format('woff2'),
+        url('../fonts/mersad/Mersad-ExtraBold.woff') format('woff'),
+        url('../fonts/mersad/Mersad-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Space Mono Bold';
+    src: url('../fonts/space-mono/SpaceMono-Bold.woff2') format('woff2'),
+        url('../fonts/space-mono/SpaceMono-Bold.woff') format('woff'),
+        url('../fonts/space-mono/SpaceMono-Bold.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Space Mono Bold Italic';
+    src: url('../fonts/space-mono/SpaceMono-BoldItalic.woff2') format('woff2'),
+        url('../fonts/space-mono/SpaceMono-BoldItalic.woff') format('woff'),
+        url('../fonts/space-mono/SpaceMono-BoldItalic.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Make Sans';
+    src: url('../fonts/make-sans/MakeSans-Regular.woff2') format('woff2'),
+        url('../fonts/make-sans/MakeSans-Regular.woff') format('woff'),
+        url('../fonts/make-sans/MakeSans-Regular.ttf') format('truetype')
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Mersad;
+}
+
+.App {
+  text-align: center;
+}

@@ -13,16 +13,13 @@ const Header = () => {
         >
             <Grid item xs>
                 <Typography
-                    variant={"h6"}
+                    variant={"subtitle1"}
                     noWrap
                     sx={{
                     mr: 2,
                     display: { xs: 'none', md: 'flex' },
-                    fontFamily: 'monospace',
-                    fontWeight: 700,
                     letterSpacing: '.3rem',
                     color: 'inherit',
-                    textDecoration: 'none',
                     }}
                 >
                     <Link to={'/'}>Brittany Carlton</Link>
@@ -38,16 +35,13 @@ const Header = () => {
             >
                 <Grid item xs={'auto'}>
                     <Typography
-                        variant={"h6"}
+                        variant={"subtitle1"}
                         noWrap
                         sx={{
                         mr: 2,
                         display: { xs: 'none', md: 'flex' },
-                        fontFamily: 'monospace',
-                        fontWeight: 700,
                         letterSpacing: '.3rem',
                         color: 'inherit',
-                        textDecoration: 'none',
                         }}
                     >
                         <Link to={'/'}>{'.me()'}</Link>
@@ -55,16 +49,13 @@ const Header = () => {
                 </Grid>
                 <Grid item xs={'auto'}>
                     <Typography
-                        variant={"h6"}
+                        variant={"subtitle1"}
                         noWrap
                         sx={{
                         mr: 2,
                         display: { xs: 'none', md: 'flex' },
-                        fontFamily: 'monospace',
-                        fontWeight: 700,
                         letterSpacing: '.3rem',
                         color: 'inherit',
-                        textDecoration: 'none',
                         }}
                     >
                         <Link to={'/work'}>{'.work()'}</Link>
@@ -72,16 +63,13 @@ const Header = () => {
                 </Grid>
                 <Grid item xs={'auto'}>
                     <Typography
-                        variant={"h6"}
+                        variant={"subtitle1"}
                         noWrap
                         sx={{
                         mr: 2,
                         display: { xs: 'none', md: 'flex' },
-                        fontFamily: 'monospace',
-                        fontWeight: 700,
                         letterSpacing: '.3rem',
                         color: 'inherit',
-                        textDecoration: 'none',
                         }}
                     >
                         <Link to={'/contact'}>{'.contact()'}</Link>
@@ -89,16 +77,13 @@ const Header = () => {
                 </Grid>
                 <Grid item xs={'auto'}>
                     <Typography
-                        variant={"h6"}
+                        variant={"subtitle1"}
                         noWrap
                         sx={{
                         mr: 2,
                         display: { xs: 'none', md: 'flex' },
-                        fontFamily: 'monospace',
-                        fontWeight: 700,
                         letterSpacing: '.3rem',
                         color: 'inherit',
-                        textDecoration: 'none',
                         }}
                     >
                         <Link to={'/resume'}>{'.resume()'}</Link>
