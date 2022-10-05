@@ -4,10 +4,10 @@ const SkillCard = ({ cardInfo }) => {
     return (
         <Card sx={{ minWidth: 275 }}>
             <CardContent>
-                <Typography component={'h3'} variant={'h3'}>
+                <Typography component={'h3'} variant={'h4'}>
                     {cardInfo.title}
                 </Typography>
-                <Typography component={'h4'} variant={'subtitle1'}>
+                <Typography component={'subtitle1'} variant={'subtitle1'}>
                     {cardInfo.category}
                 </Typography>
                 {cardInfo.skills.map(skill => (

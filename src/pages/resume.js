@@ -1,4 +1,4 @@
-import { Link, Typography, Card, CardContent, Grid } from '@mui/material';
+import { Link, Typography, Grid, Container } from '@mui/material';
 import SkillCard from '../components/skill-card';
 
 const skills = [
@@ -10,9 +10,26 @@ const skills = [
             'CSS3',
             'JavaScript ES6+',
             'TypeScript',
+            'SQL',
+            'NoSQL',
             'GraphQL',
             'MongoDB',
             'MySQL',
+        ]
+    },
+    {
+        title: 'The Frosting',
+        category: 'Frameworks & Libraries',
+        skills: [
+            'Node JS',
+            'Express JS',
+            'React',
+            'Apollo',
+            'Sequelize',
+            'Mongoose',
+            'Bootstrap',
+            'Material UI',
+            'JQuery'
         ]
     },
     {
@@ -30,25 +47,12 @@ const skills = [
             'Adobe XD',
         ]
     },
-    {
-        title: 'The Frosting',
-        category: 'Frameworks & Libraries',
-        skills: [
-            'Node JS',
-            'Express JS',
-            'React',
-            'Apollo Client',
-            'Sequelize',
-            'Bootstrap',
-            'Material UI'
-        ]
-    },
 ]
 
 const Resume = () => {
     return (
         <>
-            <Typography component={'h2'} variant={'h2'}>Skills</Typography>
+            <Typography component={'h2'} variant={'h2'} style={{ textAlign: 'center' }}>Skills</Typography>
             <Grid container spacing={3}>
                 {skills.map(info => (
                     <Grid item xs={12} md={4} key={info.category}>
@@ -56,12 +60,16 @@ const Resume = () => {
                     </Grid>
                 ))}
             </Grid>
-            <Link
-                href={'https://docs.google.com/document/d/1HcE9UzY5vtzP_q9pKhPLg6GicucMuc-BaQdyN7jYMwM/edit?usp=sharing'}
-                underline={'none'}
-            >
-                Download My Resume
-            </Link>
+            <Container style={{ textAlign: 'center' }}>
+                <Link
+                    component={'a'}
+                    variant={'h5'}
+                    href={'https://docs.google.com/document/d/1J94ohB1FARKb71ZOUN4h_GHuE2Ym7zY3EXJaX4OJ7TA/edit?usp=sharing'}
+                    underline={'none'}
+                >
+                    Download My Resume
+                </Link>
+            </Container>
         </>
     );
 }

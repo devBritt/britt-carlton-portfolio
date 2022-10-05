@@ -31,19 +31,19 @@ const theme = createTheme({
             fontFamily: 'Mersad'
         },
         h3: {
-            fontFamily: 'Mersad'
+            fontFamily: 'Space Mono Bold'
         },
         h4: {
-            fontFamily: 'Mersad'
+            fontFamily: 'Space Mono Bold'
         },
         h5: {
-            fontFamily: 'Mersad'
+            fontFamily: 'Space Mono Bold'
         },
         h6: {
-            fontFamily: 'Mersad'
+            fontFamily: 'Space Mono Bold'
         },
         subtitle1: {
-            fontFamily: 'Space Mono Bold',
+            fontFamily: 'Space Mono Bold Italic',
             fontSize: '1.25rem'
         },
         subtitle2: {
@@ -76,7 +76,7 @@ function App() {
                 <CssBaseline />
                 <Header />
 
-                <Container >
+                <Container sx={{ py: 5 }} >
                     <main>
                         <Routes>
                             <Route path='/' element={<About />} />

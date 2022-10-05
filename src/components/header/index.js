@@ -13,7 +13,7 @@ const Header = () => {
         >
             <Grid item xs>
                 <Typography
-                    variant={"subtitle1"}
+                    variant={"h6"}
                     noWrap
                     sx={{
                     mr: 2,
@@ -41,7 +41,7 @@ const Header = () => {
             >
                 <Grid item xs={'auto'}>
                     <Typography
-                        variant={"subtitle1"}
+                        variant={"h6"}
                         noWrap
                         sx={{
                         mr: 2,
@@ -61,7 +61,7 @@ const Header = () => {
                 </Grid>
                 <Grid item xs={'auto'}>
                     <Typography
-                        variant={"subtitle1"}
+                        variant={"h6"}
                         noWrap
                         sx={{
                         mr: 2,
@@ -81,7 +81,7 @@ const Header = () => {
                 </Grid>
                 <Grid item xs={'auto'}>
                     <Typography
-                        variant={"subtitle1"}
+                        variant={"h6"}
                         noWrap
                         sx={{
                         mr: 2,
@@ -101,7 +101,7 @@ const Header = () => {
                 </Grid>
                 <Grid item xs={'auto'}>
                     <Typography
-                        variant={"subtitle1"}
+                        variant={"h6"}
                         noWrap
                         sx={{
                         mr: 2,
