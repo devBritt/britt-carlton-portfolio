@@ -1,5 +1,5 @@
-import { Grid, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Grid, Typography, Link } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -22,7 +22,13 @@ const Header = () => {
                     color: 'inherit',
                     }}
                 >
-                    <Link to={'/'}>Brittany Carlton</Link>
+                    <Link
+                        component={RouterLink}
+                        to={'/'}
+                        underline={'none'}
+                    >
+                        Brittany Carlton
+                    </Link>
                 </Typography>
             </Grid>
             
@@ -44,7 +50,13 @@ const Header = () => {
                         color: 'inherit',
                         }}
                     >
-                        <Link to={'/'}>{'.me()'}</Link>
+                        <Link
+                            component={RouterLink}
+                            to={'/'}
+                            underline={'none'}
+                        >
+                            {'.me()'}
+                        </Link>
                     </Typography>
                 </Grid>
                 <Grid item xs={'auto'}>
@@ -58,7 +70,13 @@ const Header = () => {
                         color: 'inherit',
                         }}
                     >
-                        <Link to={'/work'}>{'.work()'}</Link>
+                        <Link
+                            component={RouterLink}
+                            to={'/work'}
+                            underline={'none'}
+                        >
+                            {'.work()'}
+                        </Link>
                     </Typography>
                 </Grid>
                 <Grid item xs={'auto'}>
@@ -72,7 +90,13 @@ const Header = () => {
                         color: 'inherit',
                         }}
                     >
-                        <Link to={'/contact'}>{'.contact()'}</Link>
+                        <Link
+                            component={RouterLink}
+                            to={'/contact'}
+                            underline={'none'}
+                        >
+                            {'.contact()'}
+                        </Link>
                     </Typography>
                 </Grid>
                 <Grid item xs={'auto'}>
@@ -86,7 +110,13 @@ const Header = () => {
                         color: 'inherit',
                         }}
                     >
-                        <Link to={'/resume'}>{'.resume()'}</Link>
+                        <Link
+                            component={RouterLink}
+                            to={'/resume'}
+                            underline={'none'}
+                        >
+                            {'.resume()'}
+                        </Link>
                     </Typography>
                 </Grid>
             </Grid>
