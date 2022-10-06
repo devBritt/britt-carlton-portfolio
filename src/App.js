@@ -122,7 +122,11 @@ const theme = createTheme({
 
 function App() {
     return (
-        <Box className='App' padding='2' textAlign={'left'}>
+        <Box
+            className='App'
+            padding='2'
+            textAlign={'left'}
+        >
             <ThemeProvider theme={theme}>
                 <Router>
                     <CssBaseline />

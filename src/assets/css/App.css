@@ -5,26 +5,30 @@
 @font-face {
     font-family: 'Mersad';
     src: url('../fonts/mersad/Mersad-ExtraBold.woff2') format('woff2'),
-        url('../fonts/mersad/Mersad-ExtraBold.woff') format('woff'),
-        url('../fonts/mersad/Mersad-ExtraBold.ttf') format('truetype');
+    url('../fonts/mersad/Mersad-ExtraBold.woff') format('woff'),
+    url('../fonts/mersad/Mersad-ExtraBold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Space Mono Bold';
     src: url('../fonts/space-mono/SpaceMono-Bold.woff2') format('woff2'),
-        url('../fonts/space-mono/SpaceMono-Bold.woff') format('woff'),
-        url('../fonts/space-mono/SpaceMono-Bold.ttf') format('truetype')
+    url('../fonts/space-mono/SpaceMono-Bold.woff') format('woff'),
+    url('../fonts/space-mono/SpaceMono-Bold.ttf') format('truetype')
 }
 @font-face {
     font-family: 'Space Mono Bold Italic';
     src: url('../fonts/space-mono/SpaceMono-BoldItalic.woff2') format('woff2'),
-        url('../fonts/space-mono/SpaceMono-BoldItalic.woff') format('woff'),
-        url('../fonts/space-mono/SpaceMono-BoldItalic.ttf') format('truetype')
+    url('../fonts/space-mono/SpaceMono-BoldItalic.woff') format('woff'),
+    url('../fonts/space-mono/SpaceMono-BoldItalic.ttf') format('truetype')
 }
 @font-face {
     font-family: 'Make Sans';
     src: url('../fonts/make-sans/MakeSans-Regular.woff2') format('woff2'),
-        url('../fonts/make-sans/MakeSans-Regular.woff') format('woff'),
-        url('../fonts/make-sans/MakeSans-Regular.ttf') format('truetype')
+    url('../fonts/make-sans/MakeSans-Regular.woff') format('woff'),
+    url('../fonts/make-sans/MakeSans-Regular.ttf') format('truetype')
+}
+
+html, body {
+    min-height: 100vh;
 }
 
 h1,
@@ -37,5 +41,5 @@ h6 {
 }
 
 .App {
-  text-align: center;
+    text-align: center;
 }

@@ -11,7 +11,7 @@ const NavLink = styled((props) => (
     '&:hover, &.Mui-focusVisible': {
         color: theme.palette.success.main
     }
-}))
+}));
 
 const Header = () => {
     return (
