@@ -1,5 +1,17 @@
 import { Grid, Link } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import { Link as RouterLink } from 'react-router-dom';
+
+const NavLink = styled((props) => (
+    <Link
+        {...props}
+    />
+))(({ theme }) => ({
+    color: theme.palette.common.white,
+    '&:hover, &.Mui-focusVisible': {
+        color: theme.palette.success.main
+    }
+}))
 
 const Header = () => {
     return (
@@ -14,7 +26,7 @@ const Header = () => {
             py={2}
         >
             <Grid item xs>
-                <Link
+                <NavLink
                     component={RouterLink}
                     variant={'h5'}
                     to={'/'}
@@ -22,7 +34,7 @@ const Header = () => {
                     letterSpacing={'.3rem'}
                 >
                     Brittany Carlton
-                </Link>
+                </NavLink>
             </Grid>
             
             <Grid
@@ -34,7 +46,7 @@ const Header = () => {
                 spacing={2}
             >
                 <Grid item xs={'auto'}>
-                    <Link
+                    <NavLink
                         component={RouterLink}
                         variant={'h6'}
                         to={'/'}
@@ -42,10 +54,10 @@ const Header = () => {
                         letterSpacing={'.3rem'}
                     >
                         {'.me()'}
-                    </Link>
+                    </NavLink>
                 </Grid>
                 <Grid item xs={'auto'}>
-                    <Link
+                    <NavLink
                         component={RouterLink}
                         variant={'h6'}
                         to={'/work'}
@@ -53,10 +65,10 @@ const Header = () => {
                         letterSpacing={'.3rem'}
                     >
                         {'.work()'}
-                    </Link>
+                    </NavLink>
                 </Grid>
                 <Grid item xs={'auto'}>
-                    <Link
+                    <NavLink
                         component={RouterLink}
                         variant={'h6'}
                         to={'/contact'}
@@ -64,10 +76,10 @@ const Header = () => {
                         letterSpacing={'.3rem'}
                     >
                         {'.contact()'}
-                    </Link>
+                    </NavLink>
                 </Grid>
                 <Grid item xs={'auto'}>
-                    <Link
+                    <NavLink
                         component={RouterLink}
                         variant={'h6'}
                         to={'/resume'}
@@ -75,7 +87,7 @@ const Header = () => {
                         letterSpacing={'.3rem'}
                     >
                         {'.resume()'}
-                    </Link>
+                    </NavLink>
                 </Grid>
             </Grid>
         </Grid>
