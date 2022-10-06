@@ -49,8 +49,8 @@ const theme = createTheme({
             dark: '#de5fcc'
         },
         success: {
-            main: '#60d184',
-            light: '#91e4ab',
+            main: '#91e4ab',
+            light: '#c1f1d0',
             dark: '#33b45c'
         },
         grey: {
