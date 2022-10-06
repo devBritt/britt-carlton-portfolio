@@ -1,4 +1,4 @@
-import { Grid, Typography, Link } from '@mui/material';
+import { Grid, Link } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
 const Header = () => {
@@ -10,26 +10,19 @@ const Header = () => {
             alignItems={'center'}
             id={'app-header'}
             aria-label={'header'}
+            px={3}
+            py={2}
         >
             <Grid item xs>
-                <Typography
-                    variant={"h6"}
-                    noWrap
-                    sx={{
-                    mr: 2,
-                    display: { xs: 'none', md: 'flex' },
-                    letterSpacing: '.3rem',
-                    color: 'inherit',
-                    }}
+                <Link
+                    component={RouterLink}
+                    variant={'h5'}
+                    to={'/'}
+                    underline={'none'}
+                    letterSpacing={'.3rem'}
                 >
-                    <Link
-                        component={RouterLink}
-                        to={'/'}
-                        underline={'none'}
-                    >
-                        Brittany Carlton
-                    </Link>
-                </Typography>
+                    Brittany Carlton
+                </Link>
             </Grid>
             
             <Grid
@@ -38,86 +31,51 @@ const Header = () => {
                 xs={'auto'}
                 id={'nav'}
                 aria-label={'navigation'}
+                spacing={2}
             >
                 <Grid item xs={'auto'}>
-                    <Typography
-                        variant={"h6"}
-                        noWrap
-                        sx={{
-                        mr: 2,
-                        display: { xs: 'none', md: 'flex' },
-                        letterSpacing: '.3rem',
-                        color: 'inherit',
-                        }}
+                    <Link
+                        component={RouterLink}
+                        variant={'h6'}
+                        to={'/'}
+                        underline={'none'}
+                        letterSpacing={'.3rem'}
                     >
-                        <Link
-                            component={RouterLink}
-                            to={'/'}
-                            underline={'none'}
-                        >
-                            {'.me()'}
-                        </Link>
-                    </Typography>
+                        {'.me()'}
+                    </Link>
                 </Grid>
                 <Grid item xs={'auto'}>
-                    <Typography
-                        variant={"h6"}
-                        noWrap
-                        sx={{
-                        mr: 2,
-                        display: { xs: 'none', md: 'flex' },
-                        letterSpacing: '.3rem',
-                        color: 'inherit',
-                        }}
+                    <Link
+                        component={RouterLink}
+                        variant={'h6'}
+                        to={'/work'}
+                        underline={'none'}
+                        letterSpacing={'.3rem'}
                     >
-                        <Link
-                            component={RouterLink}
-                            to={'/work'}
-                            underline={'none'}
-                        >
-                            {'.work()'}
-                        </Link>
-                    </Typography>
+                        {'.work()'}
+                    </Link>
                 </Grid>
                 <Grid item xs={'auto'}>
-                    <Typography
-                        variant={"h6"}
-                        noWrap
-                        sx={{
-                        mr: 2,
-                        display: { xs: 'none', md: 'flex' },
-                        letterSpacing: '.3rem',
-                        color: 'inherit',
-                        }}
+                    <Link
+                        component={RouterLink}
+                        variant={'h6'}
+                        to={'/contact'}
+                        underline={'none'}
+                        letterSpacing={'.3rem'}
                     >
-                        <Link
-                            component={RouterLink}
-                            to={'/contact'}
-                            underline={'none'}
-                        >
-                            {'.contact()'}
-                        </Link>
-                    </Typography>
+                        {'.contact()'}
+                    </Link>
                 </Grid>
                 <Grid item xs={'auto'}>
-                    <Typography
-                        variant={"h6"}
-                        noWrap
-                        sx={{
-                        mr: 2,
-                        display: { xs: 'none', md: 'flex' },
-                        letterSpacing: '.3rem',
-                        color: 'inherit',
-                        }}
+                    <Link
+                        component={RouterLink}
+                        variant={'h6'}
+                        to={'/resume'}
+                        underline={'none'}
+                        letterSpacing={'.3rem'}
                     >
-                        <Link
-                            component={RouterLink}
-                            to={'/resume'}
-                            underline={'none'}
-                        >
-                            {'.resume()'}
-                        </Link>
-                    </Typography>
+                        {'.resume()'}
+                    </Link>
                 </Grid>
             </Grid>
         </Grid>

@@ -7,7 +7,7 @@ import DialpadRoundedIcon from '@mui/icons-material/DialpadRounded';
 import { useState } from 'react';
 
 const CustomTextField = styled((props) => (
-    <TextField InputProps={{ disableUnderline: true }} {...props} />
+    <TextField {...props} />
   ))(() => ({
     '& .MuiFilledInput-root': {
       borderBottom: '1px solid #ebedef',

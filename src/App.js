@@ -1,6 +1,6 @@
 import './assets/css/App.css';
-import { CssBaseline, Container } from '@mui/material';
-import { createTheme, hslToRgb, ThemeProvider } from '@mui/material/styles';
+import { CssBaseline, Container, Box } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // fonts
@@ -122,25 +122,27 @@ const theme = createTheme({
 
 function App() {
     return (
-        <ThemeProvider theme={theme} className="App" padding={2}>
-            <Router>
-                <CssBaseline />
-                <Header />
+        <Box className='App' padding='2' textAlign={'left'}>
+            <ThemeProvider theme={theme}>
+                <Router>
+                    <CssBaseline />
+                    <Header />
 
-                <Container sx={{ py: 5 }} >
-                    <main>
-                        <Routes>
-                            <Route path='/' element={<About />} />
-                            <Route path='/work' element={<Work />} />
-                            <Route path='/contact' element={<Contact />} />
-                            <Route path='/resume' element={<Resume />} />
-                        </Routes>
-                    </main>
-                </Container>
+                    <Container sx={{ py: 5 }} >
+                        <main>
+                            <Routes>
+                                <Route path='/' element={<About />} />
+                                <Route path='/work' element={<Work />} />
+                                <Route path='/contact' element={<Contact />} />
+                                <Route path='/resume' element={<Resume />} />
+                            </Routes>
+                        </main>
+                    </Container>
 
-                <Footer />
-            </Router>
-        </ThemeProvider>
+                    <Footer />
+                </Router>
+            </ThemeProvider>
+        </Box>
         );
     }
     
