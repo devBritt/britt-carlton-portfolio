@@ -22,17 +22,6 @@ const CustomTextField = styled((props) => (
             paddingBottom: 8
         }
     }));
-    
-const CustomLink = styled((props) => (
-    <Link
-        {...props}
-    />
-))(({ theme }) => ({
-    color: theme.palette.primary.main,
-    '&:hover, &.Mui-focusVisible': {
-        color: theme.palette.primary.light
-    }
-}));
 
 const Contact = () => {
     // state for name-input
