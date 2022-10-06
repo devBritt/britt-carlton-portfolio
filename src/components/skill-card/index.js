@@ -1,5 +1,4 @@
 import { Card, CardContent, Typography } from '@mui/material';
-import { alpha } from '@mui/material/styles';
 
 const SkillCard = ({ cardInfo }) => {
     return (
@@ -15,7 +14,7 @@ const SkillCard = ({ cardInfo }) => {
                 <Typography
                     component={'subtitle1'}
                     variant={'subtitle1'}
-                    sx={{ color: `${alpha('#ebedef', 0.4)}` }}
+                    sx={{ color: '#b1bdc8' }}
                 >
                     {cardInfo.category}
                 </Typography>
