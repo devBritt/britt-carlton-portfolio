@@ -1,5 +1,11 @@
 /* color variables */
-
+:root {
+    --title-gradient: linear-gradient(90deg,
+        #28d0e8, #31e3e5, #39e1d0, #42debc, #4adbaa, #51d89b, #59d48e, #60d184,
+        #64d5b0, #69d6d8, #6db2dc, #7290df, #8077e2, #aa7ce5, #d282e8, #eb87dd,
+        #de7cea, #bd70e9, #9764e9, #6c59e8, #4d5fe8, #417fe8, #34a4e8, #28d0e8
+        );
+}
 
 /* custom fonts */
 @font-face {
@@ -27,10 +33,6 @@
     url('../fonts/make-sans/MakeSans-Regular.ttf') format('truetype')
 }
 
-html, body {
-    min-height: 100vh;
-}
-
 h1,
 h2,
 h3,
@@ -42,4 +44,27 @@ h6 {
 
 .App {
     text-align: center;
+    min-height: 100vh;
 }
+
+.linear-wipe {
+    text-align: center;
+    background: var(--title-gradient);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-animation: shine 5s linear infinite;
+            animation: shine 5s linear infinite;
+  }
+  @-webkit-keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }

@@ -25,7 +25,7 @@ const Header = () => {
             px={3}
             py={2}
         >
-            <Grid item xs>
+            <Grid item xs align={'left'}>
                 <NavLink
                     component={RouterLink}
                     variant={'h5'}

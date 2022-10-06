@@ -1,5 +1,5 @@
 import './assets/css/App.css';
-import { CssBaseline, Container, Box } from '@mui/material';
+import { CssBaseline, Container, Box, Stack } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -123,27 +123,25 @@ const theme = createTheme({
 function App() {
     return (
         <Box
-            className='App'
             padding='2'
-            textAlign={'left'}
         >
             <ThemeProvider theme={theme}>
                 <Router>
                     <CssBaseline />
-                    <Header />
+                    <Stack justifyContent={'space-between'} className='App'>
+                        <Header />
 
-                    <Container sx={{ py: 5 }} >
-                        <main>
+                        <Container component={'main'} sx={{ py: 5 }} >
                             <Routes>
                                 <Route path='/' element={<About />} />
                                 <Route path='/work' element={<Work />} />
                                 <Route path='/contact' element={<Contact />} />
                                 <Route path='/resume' element={<Resume />} />
                             </Routes>
-                        </main>
-                    </Container>
+                        </Container>
 
-                    <Footer />
+                        <Footer />
+                    </Stack>
                 </Router>
             </ThemeProvider>
         </Box>
