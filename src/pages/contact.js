@@ -1,6 +1,7 @@
 import { Button, FormControl, Grid, FormHelperText, TextField, Typography, Link } from "@mui/material";
 import { styled } from '@mui/material/styles';
-import SendIcon from "@mui/icons-material/SendRounded";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 import { useState } from 'react';
 
@@ -112,7 +113,7 @@ const Contact = () => {
                         </FormControl>
                     </Grid>
                     <Grid container item xs={12} md={6} justifyContent={'flex-start'}>
-                        <Button variant='contained' endIcon={<SendIcon /> } size={'large'}>Send </Button>
+                        <Button variant='contained' startIcon={<FontAwesomeIcon icon={faPaperPlane} size={'1x'} /> } size={'large'}>Send&nbsp;</Button>
                     </Grid>
                 </Grid>
             </form>

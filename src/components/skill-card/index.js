@@ -12,7 +12,7 @@ const SkillCard = ({ cardInfo }) => {
                     {cardInfo.title}
                 </Typography>
                 <Typography
-                    component={'subtitle1'}
+                    component={'h4'}
                     variant={'subtitle1'}
                     sx={{ color: '#b1bdc8' }}
                 >
