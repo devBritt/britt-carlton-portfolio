@@ -120,9 +120,8 @@ const Work = () => {
                         >
                             {open && openProject.name}
                         </Typography>
-                        {/* TODO: add links to demo and repo; add styles */}
-                        <Link>Demo</Link>
-                        <Link>Repo</Link>
+                        <Link href={openProject.demo}>Demo</Link>
+                        <Link href={openProject.repo}>Repo</Link>
                     </Stack>
                     <Typography
                         component={'h3'}
