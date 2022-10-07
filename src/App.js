@@ -126,7 +126,7 @@ function App() {
             padding='2'
         >
             <ThemeProvider theme={theme}>
-                <Router>
+                <Router basename={process.env.PUBLIC_URL}>
                     <CssBaseline />
                     <Stack justifyContent={'space-between'} className='App'>
                         <Header />
